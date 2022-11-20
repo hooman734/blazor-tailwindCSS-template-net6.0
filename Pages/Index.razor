@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1 class="text-red-400">Hello, world!</h1>
+
+<p>Selected Size: @size</p>
+
+<select class="rounded-t-lg p-1 bg-blue-400" @bind="size">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+</select>
+
+@code {
+    private int size;
+}
